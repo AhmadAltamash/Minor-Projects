@@ -1,0 +1,132 @@
+@media screen and (max-width : 395px) {
+    #naam{
+        display: inline-flex;
+        justify-content: center;
+        width: 80%;
+        position: relative;
+        margin: 30px 0px 0px 40px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    #naam1{
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        display: block;
+        height: 40px;
+        width: 70%;
+        border: 0px solid transparent;
+        border-radius: 20px;
+        background-color: #f2f2f2;
+        box-shadow: 0px 5px rgb(31, 161, 75);
+        transition: all ease 0.5s;
+    }
+    
+    #naam1:hover{
+        box-shadow: 0px -5px rgb(31, 161, 75);
+        transition: all ease 0.5s;
+    }
+    #box{
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin-top: 30px;
+        height: 480px;
+        width: 400px;
+        position: relative;
+        padding: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .playground{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 99;
+    }
+    .container::after
+    {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+        height: 600px;
+        width: 100px;
+        background-color: rgb(33, 103, 12);
+        animation: move 1.5s infinite;
+    }
+    @keyframes move {
+        100%{
+            transform: translate(-50%,-50%) rotate(225deg);
+        }
+    }
+    .playground h1{
+        font-size: 30px;
+        background: linear-gradient(to right top, rgb(6, 79, 6),rgb(31, 162, 31));
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    .statement{
+        margin: 40px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .Score h2{
+        font-size: 28px ;
+        padding: 30px 0px;
+    }
+    .Score p{
+        font-size: 20px ;
+        padding: 10px 5px;
+    }
+    .items button img{
+    
+        padding: 3px;
+        height: 30px;
+    
+    }
+    .items button{
+        border: 0px solid transparent;
+        border-radius: 20px;
+        margin: 30px 5px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: green;
+        transition: all ease-in 0.4s;
+    }
+    button:hover{
+        background: linear-gradient(to right top, green, lightgreen, green);
+        transition: all ease-in 0.4s;
+    }
+    #clear
+    {
+        padding: 10px 0px;
+        background: linear-gradient(to right top, rgb(6, 79, 6),rgb(49, 204, 49));
+        border: 0px solid transparent;
+        border-radius: 10px;
+        height: 50px;
+        width: 130px;
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+        box-shadow: 0px 5px rgb(31, 161, 75);
+        transition: all ease-in 0.2s;
+    }
+    #clear:hover{
+        background: linear-gradient(to right top, green, lightgreen, green);
+        box-shadow: 0px 8px rgb(44, 69, 38);
+        color: black;
+        transition: all ease-in 0.2s;
+    }
+
+}
