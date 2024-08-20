@@ -134,8 +134,8 @@ function firstPage(){
 function sideBar(){
     var tl = gsap.timeline()
     var menu = document.querySelector("nav span .menu")
-    var close = document.querySelector("#main .sidebar i")
-    tl.to("#main .sidebar",{
+    var close = document.querySelector(".sidebar i")
+    tl.to(".sidebar",{
       right:0,
       duration:0.5,
     })
@@ -149,12 +149,13 @@ function sideBar(){
     })
     tl.pause();
     menu.addEventListener("click",()=>{
+      menu.style.display = "none"
       tl.play()
     })
     close.addEventListener("click",()=>{
+      menu.style.display = "block"
       tl.reverse()
     })
-    
 }
 
 sideBar()
