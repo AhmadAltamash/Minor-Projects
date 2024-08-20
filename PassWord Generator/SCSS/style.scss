@@ -1,0 +1,396 @@
+@font-face {
+    font-family: EasyHand;
+    src: url(../Media/EduAUVICWANTHand-Regular.ttf);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100%;
+    font-family: "EasyHand";
+}
+
+body{
+  overflow: hidden;
+  background: linear-gradient(to left bottom, #797da1,#4b4e62,#6c708f);
+}
+.container {
+  width: 450px;
+  background: #8C92BB;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.head #toggle{
+  position: absolute;
+  right: 5%;
+}
+
+.head #toggle span i{
+  font-size: 2em;
+}
+
+#sp1:hover{
+  background-color: #fff;
+  border: none;
+}
+#toggle:hover #imp{
+  position: absolute;
+  z-index: 10;
+  opacity: 1;
+}
+.head #toggle #sp1{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+}
+
+#imp{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5vw;
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  top: -100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+#pg {
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #858BB2;
+}
+
+.wrapper {
+  margin: 1.25rem 1.75rem;
+}
+
+.wrapper .input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 53px;
+  color: #000000;
+  background: #858BB2;
+  font-size: 1.06rem;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #000;
+  padding: 0 2.85rem 0 1rem;
+  font-family: inherit;
+}
+
+.input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #000000;
+}
+
+.input-box span:hover {
+  color: #46495E!important;
+}
+
+.wrapper .pass-settings {
+  font-weight: 500;
+  margin: 1.56rem 0 1.25rem;
+}
+
+.pass-settings .options {
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.pass-settings .options .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
+}
+
+.options .option:first-child input {
+  opacity: 0.7;
+}
+
+.options .option input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.options .option label {
+  cursor: pointer;
+  color: #000;
+  padding-left: 0.63rem;
+}
+
+.pass-settings input[type='checkbox'] {
+  accent-color: #46496E;
+}
+
+.wrapper .generate-btn {
+  width: 100%;
+  color: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #46496E;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
+}
+.wrapper .generate-btn:hover {
+  background: #46495E;
+}
+main{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+footer{
+  color: white;
+  font-weight: 600;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+  padding: 0rem 0.1rem;
+}
+
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+}
+
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 25px;
+  height: 25px;
+}
+
+.example-2 .icon-content a:hover {
+  color: white;
+}
+
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social=linkedin] .filled,
+.example-2 .icon-content a[data-social=linkedin] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social=github] .filled,
+.example-2 .icon-content a[data-social=github] ~ .tooltip {
+  background-color: #24262a;
+}
+
+.example-2 .icon-content a[data-social=instagram] .filled,
+.example-2 .icon-content a[data-social=instagram] ~ .tooltip {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+
+@media screen and (max-width:380px) {
+  body{
+    overflow: hidden;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    width: 100%;
+    gap: 20px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 8px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content {
+    margin: 0 5px;
+    position: relative;
+    padding: 0rem 0.1rem;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -35px;
+  }
+}
+
+.strength-checker {
+  height: 30vh;
+  width: 30vw;
+  background: #8C92BB;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 4%;
+  opacity: 0;
+}
+
+.strength-checker input {
+  color: #000;
+  font-size: 1.89vw;
+  margin: 4vw 2vw 2vw 2vw;
+  width: 85%;
+  background: #858BB2;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid #24262a;
+}
+
+.strength-checker .power-container{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0vw 2vw;
+  width: 85%;
+  height: 3vw;
+}
+.strength-checker .power{
+  border-radius: 5px;
+  width: 1%;
+  height: 100%;
+  background: #e33535;
+  transition: 1s;
+}
+#sp2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  transition: all ease 0.4;
+}
+#sp2 i{
+  font-size: 1.5em;
+}
+#sp2:hover{
+  background: #fff;
+}
