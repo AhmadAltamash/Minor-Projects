@@ -22,6 +22,7 @@ body{
     );
     background-size: 60px 60px;
     background-position: -5px -5px;
+    overflow: hidden;
 }
 #main .sidebar{
     display: none;
@@ -388,11 +389,13 @@ footer span a{
     .about p:nth-child(n){
         font-size: 0.8em;
     }
-    #main{
+    body{
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
+        height: 100vh;
+        width: 100%;
     }
-    #main .sidebar{
+    .sidebar{
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -403,19 +406,20 @@ footer span a{
         width: 70%;
         right: -70%;
         z-index: 999;
-        padding: 5.5em 2em;
+        padding: 5.5em 1.5em;
     }
-    #main .sidebar i{
+    .sidebar i{
         position: absolute;
         top: 2.5%;
         right: 4.5%;
         z-index: 999;
         font-size: 2em;
+        cursor: pointer;
     }
-    #main .sidebar span{
+    .sidebar span{
         font-size: 1.2em;
     }
-    #main .sidebar span a{
+    .sidebar span a{
         text-decoration: none;
     }
     footer{
