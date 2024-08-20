@@ -1,0 +1,366 @@
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background: rgb(255, 135, 65);
+    background: linear-gradient(
+      250deg,
+      rgba(255, 135, 65, 1) 15%,
+      rgba(255, 65, 65, 1) 65%
+    );
+}
+  
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.sign svg {
+    width: 17px;
+}
+  
+.sign svg path {
+    fill: white;
+}
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+/* hover effect on button width */
+.Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+}
+  
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 10px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+    opacity: 1;
+    width: 65%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+}
+/* button click effect */
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+  
+.Btn2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background: rgb(255, 135, 65);
+    background: linear-gradient(
+      250deg,
+      rgba(255, 135, 65, 1) 15%,
+      rgba(255, 65, 65, 1) 65%
+    );
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(255, 135, 65);
+    transition-duration: 0.3s;
+}
+  
+.svg2 {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: 0.3s;
+}
+  
+.Btn2:hover {
+    color: transparent;
+}
+  
+.Btn2:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: 0.3s;
+}
+  
+.Btn2:active {
+    transform: translate(3px , 3px);
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 0px rgb(212, 32, 32);
+}
+  
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+   
+button.learn-more {
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    background: linear-gradient(
+        250deg,
+        rgba(255, 135, 65, 1) 15%,
+        rgba(255, 65, 65, 1) 65%
+    );
+    border: 2px solid rgb(255, 135, 65);
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learn-more:hover {
+    background: linear-gradient(
+        250deg,
+        rgba(255, 135, 65, 1) 15%,
+        rgba(255, 65, 65, 1) 65%
+    );
+    -webkit-transform: translate(0, 0.25em);
+    transform: translate(0, 0.25em);
+}
+   
+button.learn-more:hover::before {
+    -webkit-box-shadow: 0 0 0 2px rgb(255, 135, 65), 0 0.5em 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px rgb(255, 135, 65), 0 0.5em 0 0 rgb(255, 135, 65);
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
+   
+button.learn-more:active {
+    background: linear-gradient(
+        250deg,
+        rgba(255, 135, 65, 1) 15%,
+        rgba(255, 65, 65, 1) 65%
+    );
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+}
+   
+button.learn-more:active::before {
+    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+    padding: 0rem 0.1rem;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0274b3;
+  }
+  
+  .example-2 .icon-content a[data-social="github"] .filled,
+  .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+    background-color: #24262a;
+  }
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background: linear-gradient(
+      45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f
+    );
+  }
+
+@media  screen and (max-width:380px) {
+    main{
+        height: auto;
+        width: 100%;
+    }
+    .container {
+        width: 90%;
+    }
+    h1{
+        font-size: 16px;
+    }
+    .text1{
+        font-size: 12px;
+        height: 40px;
+        width: 100%;
+    }
+    .Majortext{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        overflow-y: hidden;
+    }
+    .list{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .task {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .task .task-text{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        width: 100%;
+        gap: 10px;
+    }
+    .example-2 .icon-content a {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      color: #4d4d4d;
+      background-color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    .example-2 .icon-content a svg {
+      position: relative;
+      z-index: 1;
+      width: 15px;
+      height: 15px;
+    }
+    .example-2 .icon-content .tooltip {
+      position: absolute;
+      top: -30%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 15px;
+      opacity: 0;
+      visibility: hidden;
+      font-size: 8px;
+      transition: all 0.3s ease;
+    }
+    .example-2 .icon-content {
+      margin: 0 5px;
+      position: relative;
+      padding: 0rem 0.02rem;
+    }
+    .example-2 .icon-content:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+      top: -35px;
+    }
+
+}

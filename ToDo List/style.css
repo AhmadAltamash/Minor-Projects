@@ -1,0 +1,140 @@
+@font-face {
+    font-family: mont;
+    src: url(./montserrat/Montserrat-Thin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'mont';
+}
+body {
+    overflow-x: hidden;
+    background: rgb(48,47,70);
+    background: linear-gradient(90deg, rgba(48,47,70,1) 4%, rgba(69,54,84,1) 58%, rgba(62,49,84,1) 100%);
+}
+header{
+    height: 10vh;
+}
+.container {
+    background: linear-gradient(90deg, rgba(48,47,70,1) 4%, rgba(69,54,84,1) 58%, rgba(62,49,84,1) 100%) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid transparent;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+/* Example animation keyframes */
+@keyframes gradient {
+    0% 
+    { 
+        background-position: 0% 50%; 
+    }
+    50% 
+    { 
+        background-position: 100% 50%; 
+    }
+    100% 
+    { 
+        background-position: 0% 50%; 
+    }
+}
+h1{
+    margin: 20px;
+    color: white;
+    font-weight: bolder;
+}
+.text1{
+    width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  height: 70px;
+  border: 1px solid #121111;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 20px;
+}
+.text1:focus{
+    outline: none;
+    border-color: #e81cff;
+}
+.text2
+{
+    width: 100%;
+  padding: 12px 0px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+}
+.Majortext{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.list{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.buton{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+.task .task-text {
+    padding: 10px;
+    border: 1px solid rgb(16, 16, 16);
+    border-radius: 5px;
+    font-size: 18px;
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    width: 50%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 10vh - 10vh);
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
