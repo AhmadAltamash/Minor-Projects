@@ -40,7 +40,7 @@ function menuBar(){
     y:0,
   },"aajao")
   tl.to(".nav-content .elem",{
-    opacity:1,
+    display:"block",
     duration:0.1,
     y:0,
     stagger:0.2,
@@ -156,6 +156,18 @@ function sideBar(){
       menu.style.display = "block"
       tl.reverse()
     })
+}
+
+function buttonRipple(){
+    const elem = document.querySelector(".elem")
+      elem.addEventListener("mouseover",function(event){
+        console.log(event)
+        const x = (event.pageX - elem.offsetLeft);
+        const y = (event.pageY - elem.offsetTop);
+
+        elem.style.setProperty("--Xpos", x + "px" / 150 * 100)
+        elem.style.setProperty("--Ypos", y + "px" / 45 * 100)
+      })
 }
 
 sideBar()
