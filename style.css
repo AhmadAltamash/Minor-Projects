@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    color: #ffffff;
+}
+html,body{
+    height:100vh;
+    width:100%;
+    font-family: "Montserrat";
+}
+*::selection{
+    background-color: #ffffff;
+    color: #000000;
+}
+body{
+    background-color: #111111eb;
+    background-image: linear-gradient(
+      32deg,
+      rgba(8, 8, 8, 0.74) 30px,
+      transparent
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+}
+#main .sidebar{
+    display: none;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.2em 3vw;
+    height: 5vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background: #0000006b;
+    backdrop-filter: blur(3px);
+}
+nav span i{
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+nav span .close{
+    display: none;
+}
+nav span .menu{
+    display: none;
+}
+nav img{
+    height: 1.3em;
+    overflow: hidden;
+}
+.nav-content{
+    height: 10vh;
+    opacity:0;
+    /* animation : show 0.5s linear 1 */
+    padding: 0vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4vw;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    backdrop-filter: blur(3px);
+}
+.nav-content .elem{
+    padding: 0.8vw 1.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all ease 0.5s;
+    opacity: 0;
+    transform: translateY(-40%);
+}
+.nav-content .elem:hover{
+    background: #ffffff5a;
+}
+/* @keyframes show {
+    from{
+        display: none;
+        transform: translateY(-40%);
+    }
+    to{
+        display: flex;
+        transform: translateY(0%);
+    }
+} */
+#first-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 5vw 3vw 0vw 3vw;
+    margin-top: 6vw;
+}
+.wrap{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+}
+.content{
+    --rX: 0deg;
+    --rY: 0deg;
+    width: 100%;
+    display: block;
+    transform: rotateX(var(--rX)) rotateY(var(--rY));
+    transition: 0.3s;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about{
+    width: 140%;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.about span i{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.about a{
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: 600;
+}
+h2{
+    display: inline;
+    font-size: 2vw;
+    position: relative;
+}
+h2:after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0.1em;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+h2:hover::after{
+    animation: line 2s infinite;
+
+}
+@keyframes line {
+    0%{
+        width: 0%;
+        left: 0;
+    }
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
+.about p:nth-child(2){
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-top: 2vw
+}
+.about p{
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+#page1 #second-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 3vw 0vw 3vw;
+    margin-top: 3vw;
+}
+.inner-image a{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+#page2 #third-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 5vw 3vw 0vw 3vw;
+    margin-top: 2vw;
+}
+#page2 #fourth-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 3vw 0vw 3vw;
+    margin-top: 3vw;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page3 #fifth-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 2vw 3vw 0vw 3vw;
+    margin-top: 2vw;
+}
+#page3 #sixth-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 3vw 0vw 3vw;
+    margin-top: 3vw;
+}
+#page4{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+#page4 #seventh-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 2vw 3vw 0vw 3vw;
+    margin-top: 2vw;
+}
+main{
+        position: relative;
+}
+footer{    
+    background: #000;
+    height: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 3%;
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+footer span a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width:700px){
+    nav img{
+        height: 1em;
+    }
+    nav span i{
+        font-size: 2em;
+        font-weight: 100;
+    }
+    nav span .menu2{
+        display: none;
+    }
+    nav span .menu{
+        display: block;
+        overflow: hidden;
+    }
+    .nav-content{
+        display: none;
+    }
+    #page1{
+        padding-top: 7em;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+    }
+     #page2{
+        padding-top: 7em;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+    }
+    #page3{
+        padding-top: 7em;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+    }
+    #page4{
+        padding-top: 7em;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+    }
+    #first-project{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #second-project{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    #third-project{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #fourth-project{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    #fifth-project{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #sixth-project{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    #seventh-project{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrap{
+        width: 80%;
+        margin-top: 4em;
+        overflow: visible;
+    }
+    .about{
+        width: 90%;
+    }
+    .about h2{
+        font-size: 3em;
+    }
+    .about span i{
+        font-size: 1em;
+    }
+    .about p:nth-child(n){
+        font-size: 0.8em;
+    }
+    #main{
+        position: relative;
+        overflow: hidden;
+    }
+    #main .sidebar{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        background: #00000098;
+        backdrop-filter: blur(5px);
+        position: absolute;
+        height: 100vh;
+        width: 70%;
+        right: -70%;
+        z-index: 999;
+        padding: 5.5em 2em;
+    }
+    #main .sidebar i{
+        position: absolute;
+        top: 2.5%;
+        right: 4.5%;
+        z-index: 999;
+        font-size: 2em;
+    }
+    #main .sidebar span{
+        font-size: 1.2em;
+    }
+    #main .sidebar span a{
+        text-decoration: none;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 0.8em;
+        background: #000;
+        height: 9vh;
+        bottom: 0%;
+    }
+    footer span h3{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    #links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+    footer span a{
+        text-decoration: none;
+        font-weight: 600;
+    }
+}

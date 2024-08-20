@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html,body{
+    min-height:100vh;
+    width:100%
+}
+body{
+    background: linear-gradient(to bottom, #e1e1e1eb 50%, #ebebeb 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+main{
+    min-width: 20em;
+    width: max-content;
+    height: max-content;
+    min-height: 20em;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 15px 20px #cccccc;
+    padding: 2em 2em;
+}
+form{
+    height: 5vh;
+    border: 0.5px solid #5553;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+form button{
+    cursor: pointer;
+}
+form button i{
+    opacity: 0.5;
+}
+form input,button{
+    height: max-content;
+    width: max-content;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background: transparent;
+}
+main .result{
+    padding-top: 2em;
+    text-align: center;
+    
+}
+.result .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.temprature img{
+    height: 11em;
+    filter: drop-shadow(0px 10px 50px #474747);
+
+}
+.temprature figcaption{
+    font-size: 3em;
+}
+.description{
+    padding-top: 1.5em;
+    font-size: 1.2em;
+}
+.result ul{
+    list-style: none;
+    display: flex;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.result ul li{
+    border: 1px solid #5553;
+    color: #fff;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #9bd2fa 50%, #60b7f5 50%);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.result ul li i{
+    font-size: 2em;
+    display: block!important;
+    margin: 1em 0em;
+}
+.result ul li:nth-child(2){
+    background: linear-gradient(to bottom, #decb95 50%, #c2aa5b 50%);
+}
+.result ul li:nth-child(3){
+    background: linear-gradient(to bottom, #dc8282 50%, #bf3636 50%);
+}
+main.error{
+    animation: jitter 0.3s linear 1;
+}
+@keyframes jitter {
+    0%{
+        transform: translate(5px, 10px);
+    }
+    25%{
+        transform: translate(15px, -10px);
+    }
+    50%{
+        transform: translate(8px, 0);
+    }
+    75%{
+        transform: translate(-8px, 2px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
