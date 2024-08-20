@@ -31,7 +31,7 @@ To get started with this project, follow the steps below:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/AhmadAltamash/Minor-Projects.git
+   git clone https://ahmadaltamash.github.io/Minor-Projects/
    
 2. Navigate to the project directory:
    ```bash
@@ -53,6 +53,7 @@ This project was built using the following technologies:
 - HTML5: The standard markup language for creating web pages.
 - CSS3: Used for styling and layout, including animations and media queries.
 - JavaScript (GSAP, LocomotiveScroll): Smooth scrolling, animations, and interactive elements.
+
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
