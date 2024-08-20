@@ -63,7 +63,6 @@ nav img{
 }
 .nav-content{
     height: 10vh;
-    opacity:0;
     /* animation : show 0.5s linear 1 */
     padding: 0vw 3vw;
     display: flex;
@@ -83,11 +82,16 @@ nav img{
     font-size: 1.2em;
     font-weight: 600;
     transition: all ease 0.5s;
-    opacity: 0;
+    display: none;
     transform: translateY(-40%);
+    width: 150px;
+    height: 45px;
 }
-.nav-content .elem:hover{
-    background: #ffffff5a;
+.nav-content .elem a{
+    position: absolute;
+    z-index: 1;
+    text-decoration: none;
+    transition: all ease 0.5s;
 }
 /* @keyframes show {
     from{
@@ -99,6 +103,61 @@ nav img{
         transform: translateY(0%);
     }
 } */
+/* ToolTip */
+.elem{
+    position: relative;
+}
+.elem::before{
+    content: "";
+    position: absolute;
+    background: #ffffffb6;
+    width: 0px;
+    height: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    transition: width 0.5s, height 0.5s;
+}
+.elem:hover::before{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+}
+.elem:hover a{
+    color: #000;
+}
+.elem .tooltip{
+    position: absolute;
+    display: none;
+    border: 1px solid #ffffff85;
+    bottom: -60%;
+    right: -1.6%;
+    font-size: 0.8em;
+    font-weight: 300;
+    width: max-content;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+.elem .second{
+    position: absolute;
+    display: none;
+    border: 1px solid #ffffff85;
+    bottom: -60%;
+    right: 21%;
+    font-size: 0.8em;
+    font-weight: 300;
+    width: max-content;
+    padding: 0.2em;
+    border-radius: 5px;
+}
+.elem:hover .second{
+    display: block;
+}
+.elem:hover .tooltip{
+    display: block;
+}
+
 #first-project{
     height: 38vh;
     width: 100%;
@@ -403,8 +462,8 @@ footer span a{
         backdrop-filter: blur(5px);
         position: absolute;
         height: 100vh;
-        width: 70%;
-        right: -70%;
+        width: 60%;
+        right: -60%;
         z-index: 999;
         padding: 5.5em 1.5em;
     }
@@ -416,11 +475,11 @@ footer span a{
         font-size: 2em;
         cursor: pointer;
     }
-    .sidebar span{
-        font-size: 1.2em;
-    }
     .sidebar span a{
+        text-transform: uppercase;
+        font-weight: 500;
         text-decoration: none;
+        font-size: 1.1em;
     }
     footer{
         display: flex;
