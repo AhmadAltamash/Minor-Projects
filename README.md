@@ -8,7 +8,6 @@ A modern and responsive web application built using HTML and CSS.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
@@ -39,3 +38,35 @@ To get started with this project, follow the steps below:
    cd Minor-Projects
    
 3. Open index.html in your browser to view the website.
+
+## Usage
+
+- To customize the content, edit the index.html and style.css files located in the project directory.
+- The layout is designed to be easily adaptable. Adjustments to fonts, colors, and spacing can be made directly in the style.css file.
+- The website automatically adjusts to different screen sizes, but you can test the responsiveness by resizing your browser window.
+
+
+
+## Technologies
+This project was built using the following technologies:
+
+- HTML5: The standard markup language for creating web pages.
+- CSS3: Used for styling and layout, including animations and media queries.
+- JavaScript (GSAP, LocomotiveScroll): Smooth scrolling, animations, and interactive elements.
+## Contributing
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+## Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes.
+- Commit your changes (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature-branch).
+- Open a Pull Request.
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+For any questions or feedback, feel free to reach out:
+
+Email: altamashahmad910@gmail.com
+GitHub: AhmadAltamash
