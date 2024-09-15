@@ -310,7 +310,7 @@ h2:hover::after{
     margin-top: 3vw;
 }
 #page4{
-    height: 72vh;
+    min-height: 120vh;
     width: 100%;
     position: relative;
 }
@@ -322,6 +322,15 @@ h2:hover::after{
     gap: 4vw;
     padding: 2vw 3vw 0vw 3vw;
     margin-top: 2vw;
+}
+#page4 #eigth-project{
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 3vw 0vw 3vw;
+    margin-top: 3vw;
 }
 main{
     position: relative;
@@ -430,6 +439,12 @@ footer span a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #eigth-project{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
     }
     .wrap{
         width: 80%;
